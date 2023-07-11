@@ -1,0 +1,124 @@
+#nosotros{
+    .sNosotros1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        background-color: $colorSecundario;
+        border: $border;
+        h3{
+            background-color: $colorPrimario;
+            width: 100%;
+            text-align: center;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            p{
+                font-size: 15px;
+                text-align: justify;
+                padding: 10px;
+            }
+            img{
+                height: 125px;
+                width: 125px;
+                padding: 10px;
+            }
+        }
+        
+    }
+
+    .sNosotros2{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        flex-direction: column;
+        margin-bottom: 40px;
+        .tNosotros{
+            background-color: $colorFooter;
+            height: 150px;
+            width: 60%;
+            border: $border;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                text-align: center;
+                background-color: $colorSecundario;
+                font-size: 20px;
+            }
+        }
+    }
+    
+    
+}
+
+@media (min-width: 768px){
+    #nosotros{
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "section1 section2"
+        ". section2";
+        justify-items: center;
+        align-items: center;
+
+        .sNosotros1{
+            height: 350px;
+            width: 450px;
+            h3{
+                margin-top: 10px;
+            }
+            div{
+                p{
+                    margin-right: 20px;
+                    font-size: 18px;
+                    margin-left: 10px;
+                }
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .sNosotros2{
+            margin-top: 0px;
+            .tNosotros{
+                width: 175px;
+            }
+            .nRedes{
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    #nosotros{
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-areas: 
+        "section1 section2"
+        "section1 section2"
+        ". section2";
+        margin-top: 20px;
+        .sNosotros1{
+            width: 600px;
+            div{
+                p{
+                    font-size: 21px;
+                }
+                img{
+                    height: 175px;
+                    width: 175px;
+                }
+            }
+        }
+        .sNosotros2{
+            margin: 40px;
+        }
+    }
+}

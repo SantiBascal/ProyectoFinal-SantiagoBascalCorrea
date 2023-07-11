@@ -1,0 +1,85 @@
+footer {
+    background-color: $colorFooter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .copyright{
+        font-size: 10px;
+        align-items: center;
+    }
+
+    .redes {
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    } 
+
+}
+
+#fProductos{
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    footer{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 40px;
+        grid-template-areas: 
+        "info . redes"
+        ". copyright .";
+
+        .infoExtra{
+            grid-area: info;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-size: 17px;
+            }
+            ul{
+                li{
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        font-size: 15px;
+                        
+                    }
+                       
+                } 
+            }
+            
+        }
+        .redes{
+            grid-area: redes;
+        }
+        .copyright{
+            grid-area: copyright;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    #fPedido{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .copyright{
+        .copyrightP{
+            font-size: 12px;
+         }
+    }
+}

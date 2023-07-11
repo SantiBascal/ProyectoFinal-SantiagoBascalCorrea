@@ -1,0 +1,10 @@
+.logoFlotante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: all 300ms;
+ }
+
+ .logoFlotante:hover{
+    transform: scale(1.15);
+ }

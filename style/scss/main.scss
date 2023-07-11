@@ -1,0 +1,18 @@
+//abstracts
+@import"./abstracts/variables";
+//base
+@import"./base/reset";
+@import"./base/typography";
+@import"./base/display";
+//components
+@import"./components/buttons";
+//layout
+@import"./layout/header";
+@import "./layout/footer";
+@import"./layout/grid";
+//pages
+@import"./pages/index";
+@import"./pages/nosotros";
+@import"./pages/pedido";
+@import"./pages/productos";
+@import"./pages/faq";

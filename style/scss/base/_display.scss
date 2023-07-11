@@ -1,0 +1,26 @@
+.desktop__style {
+    display: none;
+}
+
+.desktop__only{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop__style {
+        display:initial ;
+    }
+
+    .onlyMobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .desktop__only{
+        display: initial;
+    }
+    .mobile__only{
+        display: none;
+    }
+}
