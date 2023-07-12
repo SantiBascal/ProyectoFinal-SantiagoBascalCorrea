@@ -210,22 +210,38 @@ footer .redes ul li {
   background-color: rgb(255, 221, 214);
   margin: 0;
 }
-#inicio .onlyMobile #ultimosProductos {
-  margin-top: 10px;
+#inicio .tarjetas {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
-#inicio .onlyMobile #ultimosProductos img {
+#inicio .tarjetas .tarjetas--style {
+  margin-top: 20px;
+  height: 320px;
+  width: 75%;
+  max-width: 320px;
+  background-color: #E4DBD6;
   border: 2px solid #716057;
-  padding: 5px;
-  background-color: #E8BBB2;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   transition: all 300ms;
 }
-#inicio .onlyMobile #ultimosProductos img:hover {
+#inicio .tarjetas .tarjetas--style a {
+  text-decoration: none;
+  background-color: rgb(214, 160, 148);
+  color: black;
+  padding: 5px;
+  border: 2px solid #716057;
+}
+#inicio .tarjetas .tarjetas--style img {
+  border: 2px solid #716057;
+}
+#inicio .tarjetas .tarjetas--style:hover {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-2%);
 }
@@ -255,35 +271,13 @@ footer .redes ul li {
     text-align: center;
   }
   #inicio .tarjetas {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 40px;
   }
   #inicio .tarjetas .tarjetas--style {
-    height: 280px;
-    width: 230px;
-    background-color: #E4DBD6;
-    border: 2px solid #716057;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    transition: all 300ms;
-  }
-  #inicio .tarjetas .tarjetas--style a {
-    text-decoration: none;
-    background-color: rgb(214, 160, 148);
-    color: black;
-    padding: 5px;
-    border: 2px solid #716057;
-  }
-  #inicio .tarjetas .tarjetas--style img {
-    border: 2px solid #716057;
-  }
-  #inicio .tarjetas .tarjetas--style:hover {
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-2%);
+    height: 320px;
+    width: 30%;
   }
 }
 @media (min-width: 1024px) {
@@ -329,14 +323,18 @@ footer .redes ul li {
     margin-top: 0px;
   }
   #inicio .tarjetas .tarjetas--style {
-    height: 330px;
-    width: 280px;
+    height: 380px;
+    width: 28%;
   }
   #inicio .tarjetas .tarjetas--style p {
-    font-size: 17px;
+    font-size: 20px;
   }
   #inicio .tarjetas .tarjetas--style a {
-    font-size: 18px;
+    font-size: 21px;
+  }
+  #inicio .tarjetas .tarjetas--style img {
+    height: 200px;
+    width: 200px;
   }
 }
 #nosotros .sNosotros1 {
