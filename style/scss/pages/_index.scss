@@ -4,7 +4,7 @@
     #section1 {
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 70px;
         .mobile__style{
             width: 75%;
             height: 75%;
@@ -14,7 +14,7 @@
     #section2 {
         display: flex;
         justify-content: center;
-        margin-top: 25px;
+        margin-top: 50px;
         .mobile__style{
             display: block;
             width: 75%;
@@ -34,9 +34,9 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
-        h2 {
+        h1 {
             font-size: 20px;
-            background-color: rgb(255, 221, 214);
+            background-color: $colorSeparador;
             margin: 0;
         }
     }

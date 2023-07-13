@@ -10,7 +10,7 @@
             h2{
                 font-size: 23px;
                 margin: 0px;
-                background-color: $colorSecundario;
+                background-color: $colorSeparador;
             }
         }
         .pedidoProductos{
@@ -35,7 +35,7 @@
             h2{
                 font-size: 18px;
                 margin: 0px;
-                background-color: $colorSecundario;
+                background-color: $colorSeparador;
             }
         }
 
@@ -76,14 +76,14 @@
                 align-items: center;
                 img {
                     padding: 5px;
-                    background-color: rgb(214, 160, 148);
+                    background-color: $colorSecundario;
                     margin-bottom: 15px;
                 }
             
             }
         }
         #sPedido2{
-            border-right: 2px black solid;
+            border-right: $border;
             .separadorCarrito{
                 margin-top: 0px;
                 h2{

@@ -177,7 +177,7 @@ footer .redes ul li {
 #inicio #section1 {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 #inicio #section1 .mobile__style {
   width: 75%;
@@ -186,7 +186,7 @@ footer .redes ul li {
 #inicio #section2 {
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 #inicio #section2 .mobile__style {
   display: block;
@@ -205,7 +205,7 @@ footer .redes ul li {
   justify-content: center;
   margin-top: 100px;
 }
-#inicio .separador h2 {
+#inicio .separador h1 {
   font-size: 20px;
   background-color: rgb(255, 221, 214);
   margin: 0;
@@ -457,7 +457,7 @@ footer .redes ul li {
 #pedido #sPedido1 .separadorPedido h2 {
   font-size: 23px;
   margin: 0px;
-  background-color: #E8BBB2;
+  background-color: rgb(255, 221, 214);
 }
 #pedido #sPedido1 .pedidoProductos {
   display: flex;
@@ -479,7 +479,7 @@ footer .redes ul li {
 #pedido #sPedido2 .separadorCarrito h2 {
   font-size: 18px;
   margin: 0px;
-  background-color: #E8BBB2;
+  background-color: rgb(255, 221, 214);
 }
 #pedido #sPedido2 .pedido {
   display: flex;
@@ -512,11 +512,11 @@ footer .redes ul li {
   }
   #pedido #sPedido1 .pedidoProductos img {
     padding: 5px;
-    background-color: rgb(214, 160, 148);
+    background-color: #E8BBB2;
     margin-bottom: 15px;
   }
   #pedido #sPedido2 {
-    border-right: 2px black solid;
+    border-right: 2px solid #716057;
   }
   #pedido #sPedido2 .separadorCarrito {
     margin-top: 0px;
