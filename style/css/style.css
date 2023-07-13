@@ -182,6 +182,7 @@ footer .redes ul li {
 #inicio #section1 .mobile__style {
   width: 75%;
   height: 75%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 #inicio #section2 {
   display: flex;
@@ -194,8 +195,8 @@ footer .redes ul li {
   padding: 10px;
   text-align: justify;
   font-size: 15px;
-  background-color: #E8BBB2;
-  border: 2px solid #716057;
+  background-image: linear-gradient(325deg, #E4DBD6, rgb(252, 241, 239));
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 #inicio .separador {
   background-image: url(../../images/navbar.png);
@@ -220,7 +221,7 @@ footer .redes ul li {
 #inicio .tarjetas .tarjetas--style {
   margin-top: 20px;
   height: 320px;
-  width: 75%;
+  width: 250px;
   max-width: 320px;
   background-color: #E4DBD6;
   border: 2px solid #716057;
@@ -258,6 +259,9 @@ footer .redes ul li {
   #inicio #section1 .collage {
     height: 300px;
     width: 300px;
+  }
+  #inicio #section1 .desktop__style {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   }
   #inicio #section2 .mobile__style {
     font-size: 18px;
@@ -307,12 +311,13 @@ footer .redes ul li {
   }
   #inicio #section2 .desktop__only {
     display: initial;
-    background-color: #E8BBB2;
     font-size: 21px;
     margin-bottom: 0px;
     margin-left: 20px;
     padding: 15px;
-    border: 2px solid #716057;
+    background: rgb(232, 187, 178);
+    background: linear-gradient(336deg, rgb(232, 187, 178) 0%, rgb(239, 206, 200) 29%, rgb(245, 221, 218) 43%, rgb(244, 220, 216) 55%, rgb(252, 241, 239) 100%);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   }
   #inicio .separador {
     grid-area: separador;
