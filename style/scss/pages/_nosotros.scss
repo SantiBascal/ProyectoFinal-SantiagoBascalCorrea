@@ -1,15 +1,21 @@
 #nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .sNosotros1{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
-        background-color: $colorSecundario;
-        border: $border;
-        h3{
+        background-color: $colorFondo;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+        width: 90%;
+        margin-bottom: 60px;
+        h1{
             background-color: $colorPrimario;
             width: 100%;
             text-align: center;
+            font-size: 25px;
         }
         div{
             display: flex;
@@ -37,20 +43,30 @@
         margin-top: 30px;
         flex-direction: column;
         margin-bottom: 40px;
+        width: 100%;
         .tNosotros{
-            background-color: $colorFooter;
+            background-color: $colorFondo;
             height: 150px;
-            width: 60%;
-            border: $border;
-            margin-top: 15px;
+            width: 200px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 35px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            p{
+            transition: all 300ms;
+            h2{
                 text-align: center;
-                background-color: $colorSecundario;
+                background-color: $colorPrimario;
                 font-size: 20px;
+                padding: 10px 20px;
             }
+            p{
+                font-size: 17px;
+            }
+        }
+        .tNosotros:hover{
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2%);
         }
     }
     
@@ -59,21 +75,12 @@
 
 @media (min-width: 768px){
     #nosotros{
-        display: grid;
-        grid-template-columns:2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas: 
-        "section1 section2"
-        ". section2";
         justify-items: center;
         align-items: center;
-
         .sNosotros1{
             height: 350px;
             width: 450px;
-            h3{
-                margin-top: 10px;
-            }
+            margin-top: 45px;
             div{
                 p{
                     margin-right: 20px;
@@ -86,11 +93,11 @@
             }
         }
         .sNosotros2{
-            margin-top: 0px;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
             .tNosotros{
-                width: 175px;
-            }
-            .nRedes{
+                height: 160px;
                 margin-top: 0px;
             }
         }
@@ -99,11 +106,6 @@
 
 @media (min-width: 1024px){
     #nosotros{
-        grid-template-rows: 2fr 1fr 1fr;
-        grid-template-areas: 
-        "section1 section2"
-        "section1 section2"
-        ". section2";
         margin-top: 20px;
         .sNosotros1{
             width: 600px;
@@ -118,7 +120,12 @@
             }
         }
         .sNosotros2{
-            margin: 40px;
+            margin-top: 80px;
+            width: 80%;
+            .tNosotros{
+                width: 225px;
+                height: 175px;
+            }
         }
     }
 }
