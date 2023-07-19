@@ -3,6 +3,24 @@
     flex-direction: column;
     align-items: center;
 
+    .titulo{
+        margin: 20px 0px;
+        background-color: $colorFooter;
+        width: 300px;
+        box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.4);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        div{
+            h1{
+                font-size: 25px;
+                padding: 5px 15px;
+            }
+        }
+
+    }
+
     .sProductos {
         margin-top: 10px;
         width: 100%;
@@ -26,7 +44,7 @@
 
         .tProductos {
             height: 385px;
-            width: 200px;
+            width: 250px;
             background-color: $colorFooter;
             margin-top: 15px;
             display: flex;
@@ -49,11 +67,10 @@
 
 @media(min-width: 768px) {
     #productos {
-        align-items: normal;
-
         .productos__style {
             flex-direction: row;
             justify-content: space-around;
+            width: 100%;
         }
     }
 
@@ -68,6 +85,15 @@
             margin-top: 15px;
             h2{
                 font-size: 30px;
+            }
+        }
+        .titulo{
+            width: 400px;
+            margin: 40px 0px;
+            div{
+                h1{
+                    font-size: 30px;
+                }
             }
         }
         .productos__style {

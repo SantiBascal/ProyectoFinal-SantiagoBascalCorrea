@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" Descubri toda la info sobre nuestros productos y elegi la mejor opcion para que puedas comer algo rico">
+    <meta name="description"
+        content=" Descubri toda la info sobre nuestros productos y elegi la mejor opcion para que puedas comer algo rico">
     <meta name="keywords" content=" Desayuno, Tartas, Merienda, Budin, Alfajor, Sandwich, Algo Rico,">
     <title>Algo Rico | Nuestros Productos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,7 @@
     <link rel="shortcut icon" href="../images/WhatsApp Image 2023-05-18 at 18.41.59.jpeg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/style.css">
 </head>
 
@@ -52,11 +54,18 @@
     </header>
 
     <main id="productos">
+
+        <section class="titulo">
+            <div>
+                <h1> Nuestros Productos </h1>
+            </div>
+        </section>
+
         <div class="sProductos">
             <h2> Tartas </h2>
         </div>
         <section class="productos__style">
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/tarta.jpeg" height="150px" width="150px">
                 <h3> Lemon Pie </h3>
                 <ul>
@@ -66,7 +75,7 @@
                     <li> Tamaño grande </li>
                 </ul>
             </div>
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/tarta2.jpeg" height="150px" width="150px">
                 <h3> Tarta de Frutilla </h3>
                 <ul>
@@ -81,7 +90,7 @@
             <h2> Desayunos </h2>
         </div>
         <section class="productos__style">
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/desayuno.jpeg" height="150px" width="150px">
                 <h3> Desayuno Matero </h3>
                 <ul>
@@ -91,7 +100,7 @@
                     <li> Y mas... </li>
                 </ul>
             </div>
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/desayuno2.jpeg" height="150px" width="150px">
                 <h3> Desayuno Simple </h3>
                 <ul>
@@ -106,7 +115,7 @@
             <h2>Sandwichs</h2>
         </div>
         <section class="productos__style">
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/sandwich.jpeg" height="150px" width="150px" alt="">
                 <h3> Sandwich de Rucula </h3>
                 <ul>
@@ -116,7 +125,7 @@
                     <li> Pan Casero </li>
                 </ul>
             </div>
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/x.jpg" height="150px" width="150px">
                 <h3> Sandwich de Pollo </h3>
                 <ul>
@@ -131,7 +140,7 @@
             <h2> Bandejas para Meriendas </h2>
         </div>
         <section class="productos__style">
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/merienda.jpeg" height="150px" width="150px">
                 <h3> Bandeja de Budines </h3>
                 <ul>
@@ -141,7 +150,7 @@
                     <li> Budin a Eleccion </li>
                 </ul>
             </div>
-            <div class="tProductos">
+            <div class="tProductos" data-aos="fade-up">
                 <img src="../images/WhatsApp Image 2023-06-08 at 18.17.16 (1).jpeg" height="150px" width="150px">
                 <h3> Bandeja Futbolera </h3>
                 <ul>
@@ -190,6 +199,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 </body>
 
 </html>
