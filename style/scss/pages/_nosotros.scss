@@ -19,18 +19,13 @@
         }
         div{
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;
             align-items: center;
             margin-top: 10px;
             margin-bottom: 10px;
             p{
-                font-size: 15px;
-                text-align: justify;
-                padding: 10px;
-            }
-            img{
-                height: 125px;
-                width: 125px;
+                font-size: 17px;
+                text-align:center;
                 padding: 10px;
             }
         }
@@ -81,16 +76,6 @@
             height: 350px;
             width: 450px;
             margin-top: 45px;
-            div{
-                p{
-                    margin-right: 20px;
-                    font-size: 18px;
-                    margin-left: 10px;
-                }
-                img{
-                    margin-right: 10px;
-                }
-            }
         }
         .sNosotros2{
             flex-direction: row;
@@ -109,15 +94,7 @@
         margin-top: 20px;
         .sNosotros1{
             width: 600px;
-            div{
-                p{
-                    font-size: 21px;
-                }
-                img{
-                    height: 175px;
-                    width: 175px;
-                }
-            }
+            height: 300px;
         }
         .sNosotros2{
             margin-top: 80px;
