@@ -453,103 +453,132 @@ footer .redes ul li {
   }
 }
 #pedido {
-  border-top: 2px solid #716057;
-}
-#pedido #sPedido1 .separadorPedido {
-  display: flex;
-  margin-top: 0px;
-  background-image: url(../../images/navbar.png);
-  background-size: cover;
-  justify-content: center;
-}
-#pedido #sPedido1 .separadorPedido h2 {
-  font-size: 23px;
-  margin: 0px;
-  background-color: rgb(255, 221, 214);
-}
-#pedido #sPedido1 .pedidoProductos {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-#pedido #sPedido1 .pedidoProductos img {
-  padding: 10px;
-  background-color: #E8BBB2;
-  border: 2px solid #716057;
-}
-#pedido #sPedido2 .separadorCarrito {
-  display: flex;
-  margin-top: 20px;
-  background-image: url(../../images/navbar.png);
-  background-size: cover;
-  justify-content: center;
-}
-#pedido #sPedido2 .separadorCarrito h2 {
-  font-size: 18px;
-  margin: 0px;
-  background-color: rgb(255, 221, 214);
-}
-#pedido #sPedido2 .pedido {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#pedido #sPedido2 .pedido a {
-  margin-top: 20px;
-  margin-bottom: 50px;
-  height: 55%;
-  width: 55%;
+#pedido .sPedido1 {
+  width: 80%;
+  max-width: 400px;
+  height: 225px;
+  margin: 25px 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
-#pedido #sPedido2 .pedido a img {
-  height: 100%;
+#pedido .sPedido1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pedido .sPedido1 div h1 {
+  background-color: #E4DBD6;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 20px;
+}
+#pedido .sPedido1 div a {
+  margin: 20px 0px;
+  transition: 300ms;
+}
+#pedido .sPedido1 div a img {
+  height: 100px;
+  width: 100px;
+}
+#pedido .sPedido1 div a:hover {
+  scale: 1.15;
+}
+#pedido .sPedido2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+}
+#pedido .sPedido2 h2 {
+  background-color: #E8BBB2;
+  font-size: 23px;
+  text-align: center;
+  padding: 5px 70px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  width: 300px;
+}
+#pedido .sPedido2 .tPedido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+#pedido .sPedido2 .tPedido .tarjeta {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0px;
+  background-color: rgb(228, 205, 200);
+}
+#pedido .sPedido2 .tPedido .tarjeta h3 {
+  font-size: 17px;
+}
+#pedido .sPedido2 .tPedido .tarjeta img {
+  margin: 10px 0px;
+  border: 2px solid #716057;
 }
 
 @media (min-width: 768px) {
-  #pedido {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "sPedido2 sPedido1";
+  #pedido .sPedido2 {
+    width: 768px;
   }
-  #pedido #sPedido1 .separadorPedido h2 {
-    font-size: 23px;
+  #pedido .sPedido2 .tPedido {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 768px;
   }
-  #pedido #sPedido1 .pedidoProductos {
-    flex-direction: column;
-    align-items: center;
+  #pedido .sPedido2 .tPedido .tarjeta {
+    width: 250px;
+    height: 275px;
   }
-  #pedido #sPedido1 .pedidoProductos img {
-    padding: 5px;
-    background-color: #E8BBB2;
-    margin-bottom: 15px;
+  #pedido .sPedido2 .tPedido .tarjeta h3 {
+    font: 22px;
   }
-  #pedido #sPedido2 {
-    border-right: 2px solid #716057;
-  }
-  #pedido #sPedido2 .separadorCarrito {
-    margin-top: 0px;
-  }
-  #pedido #sPedido2 .separadorCarrito h2 {
-    font-size: 23px;
-  }
-  #pedido #sPedido2 .pedido a {
-    height: 300px;
-    width: 300px;
+  #pedido .sPedido2 .tPedido .tarjeta img {
+    margin: 25px 0px;
   }
 }
 @media (min-width: 1024px) {
-  #pedido #sPedido1 .separadorPedido h2 {
+  #pedido .sPedido1 {
+    width: 400px;
+    height: 275px;
+    margin-top: 50px;
+  }
+  #pedido .sPedido1 .tCarrito h1 {
     font-size: 25px;
   }
-  #pedido #sPedido1 .pedidoProductos img {
-    width: 175px;
+  #pedido .sPedido1 .tCarrito a {
+    margin: 40px 0px;
+    height: 125px;
+    width: 125px;
+  }
+  #pedido .sPedido2 h2 {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-top: 50px;
+  }
+  #pedido .sPedido2 .tPedido {
+    width: 900px;
+  }
+  #pedido .sPedido2 .tPedido .tarjeta {
+    height: 300px;
+    width: 315px;
+    margin: 50px 0px;
+  }
+  #pedido .sPedido2 .tPedido .tarjeta h3 {
+    font: 24px;
+  }
+  #pedido .sPedido2 .tPedido .tarjeta img {
     height: 175px;
-  }
-  #pedido #sPedido2 .separadorCarrito h2 {
-    font-size: 25px;
-  }
-  #pedido #sPedido2 .pedido a {
-    margin-top: 60px;
+    width: 175px;
   }
 }
 #productos {
