@@ -4,7 +4,7 @@
     align-items: center;
 
     .titulo{
-        margin: 20px 0px;
+        margin: 20px 0px 10px 0px;
         background-color: $colorFooter;
         width: 300px;
         box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.4);
@@ -22,16 +22,17 @@
     }
 
     .sProductos {
-        margin-top: 10px;
-        width: 100%;
-        background-image: url(../../images/navbar.png);
-        background-size: cover;
+        margin: 25px 0px;
+        width: 280px;
+        background-color: $colorSecundario;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-
+        align-items: center;
+        box-shadow: 5px 5px 10px rgba( 0, 0, 0, 0.4);
         h2 {
             font-size: 23px;
-            background-color: $colorSecundario;
+            padding: 10px 0px;
             margin: 0px;
         }
     }
@@ -46,7 +47,7 @@
             height: 385px;
             width: 250px;
             background-color: $colorFooter;
-            margin-top: 15px;
+            margin: 15px 0px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -67,6 +68,20 @@
 
 @media(min-width: 768px) {
     #productos {
+        .titulo{
+            width: 340px;
+            div{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        }
+        .sProductos{
+            width: 320px;
+            h2{
+                font-size: 25px;
+            }
+        }
         .productos__style {
             flex-direction: row;
             justify-content: space-around;
@@ -82,13 +97,13 @@
 
     #productos{
         .sProductos {
-            margin-top: 15px;
+            width: 380px;
             h2{
-                font-size: 30px;
+                font-size: 28px;
             }
         }
         .titulo{
-            width: 400px;
+            width: 410px;
             margin: 40px 0px;
             div{
                 h1{
