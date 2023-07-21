@@ -11892,17 +11892,6 @@ body {
     display: none;
   }
 }
-.logoFlotante {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  transition: all 300ms;
-}
-
-.logoFlotante:hover {
-  transform: scale(1.15);
-}
-
 header nav {
   background-color: rgb(228, 205, 200);
 }
@@ -12035,6 +12024,17 @@ footer .redes ul li {
 
 #sPedido2 {
   grid-area: sPedido2;
+}
+
+.logoFlotante {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: all 300ms;
+}
+
+.logoFlotante:hover {
+  transform: scale(1.15);
 }
 
 #inicio {
@@ -12552,8 +12552,8 @@ footer .redes ul li {
 }
 #faq #sFaq2 {
   width: 70%;
-  background-color: #E4DBD6;
-  border: 2px solid #716057;
+  background-color: rgb(252, 241, 239);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -12568,26 +12568,35 @@ footer .redes ul li {
 #faq #sFaq2 p {
   font-size: 17px;
   text-align: center;
+  margin-bottom: 0px;
 }
 #faq #sFaq2 .redesFaq {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin: 20px 0px;
 }
 #faq #sFaq2 .redesFaq a {
   height: 50px;
   width: 50px;
+  transition: 300ms;
 }
 #faq #sFaq2 .redesFaq a img {
   height: 50px;
   width: 50px;
 }
+#faq #sFaq2 .redesFaq a:hover {
+  scale: 1.15;
+}
 
 @media (min-width: 768px) {
+  #faq #sFaq1 {
+    margin-top: 30px;
+  }
   #faq #sFaq2 {
     width: 400px;
     height: 220px;
+    margin: 60px 0px;
   }
   #faq #sFaq2 h2, #faq #sFaq2 .h2 {
     font-size: 23px;
